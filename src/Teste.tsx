@@ -12,7 +12,7 @@ const BotaoPerigo = styled(Butao)`
   background-color: red;
   color: #fff;
 `;
-function Teste() {
+/*function Teste() {
   return (
     <>
       <Butao fontSize="18px" principal>
@@ -26,5 +26,5 @@ function Teste() {
       </BotaoPerigo>
     </>
   );
-}
-export default Teste;
+};
+export default Teste;*/

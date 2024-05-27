@@ -1,14 +1,29 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+/*type Props = {
+  children: string;
+  fontSize?: number;
+};*/
+
 const EstiloGlobal = createGlobalStyle`
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+*{
+  margin: 0;
+  padding:0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  padding-top: 80px;
+
+  @media (max-width: 768px) {
+    padding-top: 16px;
   }
-  `;
+}
+`;
+/*const Tittle = <Props>styled.h3</Props>`
+  color: #282a35;
+  font-size: ${(props) => (props.fontSize ? props.fontSize + "px" : "14px")};
+  font-weight: bold;`;*/
+
 export default EstiloGlobal;
 
 export const Container = styled.div`
@@ -16,13 +31,15 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-teamplate-columns: 128px auto;
+  grid-template-columns: 128px auto;
   column-gap: 56px;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
+  }
 
   img {
     max-width: 100%;
-  }
-  body {
-    padding-top: 80px;
   }
 `;

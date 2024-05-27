@@ -1,9 +1,9 @@
-import Title from "../../components/Tittle";
+import Tittle from "../../components/Tittle";
 
 const Sidebar = () => (
   <aside>
     <img src="https://github.com/losercris78.png" />
-    <Title fontSize={20}>Cristian L Sedas</Title>
+    <Tittle fontSize={20}>Cristian L Sedas</Tittle>
   </aside>
 );
 

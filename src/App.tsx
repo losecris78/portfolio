@@ -1,15 +1,15 @@
 import Sidebar from "./containers/Sidebar/index";
 import Sobre from "./containers/Sobre";
 import Projetos from "./containers/Projetos";
-//import EstiloGlobal from "./styles";
+import EstiloGlobal from "./styles";
 import Container from "./styles";
-import Teste from "./Teste";
+//import Teste from "./Teste";
 
 function App() {
   return (
     <>
-      <Teste />
-      {/*<EstiloGlobal />*/}
+      {/*<Teste />*/}
+      <EstiloGlobal />
       <Container>
         <Sidebar />
         <main>
